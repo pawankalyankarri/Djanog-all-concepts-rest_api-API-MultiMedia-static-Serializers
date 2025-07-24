@@ -1,0 +1,24 @@
+{%extend 'base.html'%}
+
+{%block body%}
+    <table>
+        <tr>
+            <th>Employee id</th>
+            <th>Employee Name</th>
+            <th>Employee Age</th>
+            <th>Employee salary</th>
+            <th>Employee department</th>
+        </tr>
+
+        {%for emp in emps%}
+            <tr>
+                <td>{{emp.empid}}</td>
+                <td>{{emp.empname}}</td>
+                <td>{{emp.empage}}</td>
+                <td>{{emp.emp}}</td>
+                <td>{{emp.empid}}</td>
+                <td>{{emp.empid}}</td>
+            </tr>
+        {%endfor%}
+    </table>
+{%endblock%}
